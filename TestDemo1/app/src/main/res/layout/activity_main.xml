@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPage_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/bottomBarLayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@color/bg">
+
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/bottomBarItem_home_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/home"
+            app:iconSelected="@mipmap/home_sel"
+            app:itemText="主页"
+            app:textColorNormal="@color/fontColor"
+            app:textColorSelected="@color/fontColor_sel"
+            app:itemTextSize="10sp"
+            app:itemMarginTop="3dp"
+            app:iconHeight="20dp"
+            app:iconWidth="25dp"
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/bottomBarItem_ball_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/ball"
+            app:iconSelected="@mipmap/ball_sel"
+            app:itemText="星球"
+            app:textColorNormal="@color/fontColor"
+            app:textColorSelected="@color/fontColor_sel"
+            app:itemTextSize="10sp"
+            app:itemMarginTop="3dp"
+            app:iconHeight="20dp"
+            app:iconWidth="25dp"
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/bottomBarItem_person_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/person"
+            app:iconSelected="@mipmap/person_sel"
+            app:itemText="个人"
+            app:textColorNormal="@color/fontColor"
+            app:textColorSelected="@color/fontColor_sel"
+            app:itemTextSize="10sp"
+            app:itemMarginTop="3dp"
+            app:iconHeight="20dp"
+            app:iconWidth="25dp"
+            />
+
+
+    </com.chaychan.library.BottomBarLayout>
+
+</LinearLayout>
